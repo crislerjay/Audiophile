@@ -18,11 +18,11 @@ function App() {
     <ModalProvider>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/category/:slug" element={<Categories />} />
-        <Route path="/product/:slug" element={<Product />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/Audiophile/" element={<Home />} />
+        <Route path="/Audiophile/category/:slug" element={<Categories />} />
+        <Route path="/Audiophile/product/:slug" element={<Product />} />
+        <Route path="/Audiophile/checkout" element={<Checkout />} />
+        <Route path="/Audiophile/*" element={<NotFound />} />
       </Routes>
       <ToastContainer />
       <Footer />
