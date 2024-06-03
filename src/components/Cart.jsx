@@ -20,7 +20,7 @@ export default function Cart() {
 
   const handleOnCheckout = () => {
     if (cart.length) {
-      navigate('/checkout')
+      navigate('/Audiophile/checkout')
       closeModal()
     } else {
       notifyEmptyCart()

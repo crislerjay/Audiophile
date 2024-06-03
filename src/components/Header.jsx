@@ -26,7 +26,7 @@ export default function Header() {
       <div className="header">
         <div className="header-content">
           <div className="menu hide-on-tablet"><img onClick={() => {navToggle(); closeModal()}} src={!isNavOpen ? burgerMenu : burgerMenuClose} alt="menu icon" /></div>
-          <div className="logo"><Link to="/" onClick={() => { closeModal(); closeNav() }}><img src={logo} alt="audiophile logo" /></Link></div>
+          <div className="logo"><Link to="/Audiophile/" onClick={() => { closeModal(); closeNav() }}><img src={logo} alt="audiophile logo" /></Link></div>
           <div className='pc-only'>
             <ul className="nav-links">
               <li><Link className={activeLink === 'home' ? 'active' : ''} onClick={() => handleClick('home')} to="/Audiophile/">HOME</Link></li>
