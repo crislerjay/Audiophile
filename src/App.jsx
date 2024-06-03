@@ -22,7 +22,7 @@ function App() {
         <Route path="/Audiophile/category/:slug" element={<Categories />} />
         <Route path="/Audiophile/product/:slug" element={<Product />} />
         <Route path="/Audiophile/checkout" element={<Checkout />} />
-        <Route path="/Audiophile/*" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <ToastContainer />
       <Footer />
