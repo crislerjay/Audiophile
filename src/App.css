@@ -408,7 +408,7 @@ trending starts
 .trending .trending-item01 {
   padding: 4rem 2.4rem;
   background-color: var(--clr-orange-01);
-  background-image: url('./assets/images/home/desktop/pattern-circles.svg');
+  background-image: url('/Audiophile/images/home/desktop/pattern-circles.svg');
   background-size: 50rem;
   background-position: center -100px;
   background-repeat: no-repeat;

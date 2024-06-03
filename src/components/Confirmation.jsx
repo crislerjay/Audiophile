@@ -15,7 +15,7 @@ export default function Confirmation() {
   const handleSubmit = () => {
     closeModal()
     clearCart()
-    navigate('/')
+    navigate('/Audiophile/')
   }
 
   return (
