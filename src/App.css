@@ -1365,9 +1365,18 @@ checkout ends
 /* ==========================================================================
 confirmation starts
 ========================================================================== */
+.confirmation-modal {
+  display: none;
+  top: 0;
+}
+
+.confirmation-modal.active {
+  display: block;
+}
+
 .confirmation {
-  width: 100%;
-  margin: auto;
+  width: 87%;
+  margin: 5% auto;
   padding: 2.4rem;
   background-color: var(--clr-white);
   border-radius: 8px;
@@ -1401,6 +1410,7 @@ confirmation starts
   margin-top: 1rem;
   color: var(--clr-white);
 }
+
 
 @media (min-width: 769px) {
   .confirmation {
