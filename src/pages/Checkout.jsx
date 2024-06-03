@@ -35,7 +35,7 @@ export default function Checkout() {
   const navigate = useNavigate();
   const cart = useCartStore((state) => state.cart);
   const { total, vat, shipping, overallTotal } = computeTotal(cart);
-  const { isConfirmationOpen, setIsConfirmationOpen, ModalToggle } = useContext(ModalContext);
+  const { isConfirmationOpen, setIsConfirmationOpen, openModal } = useContext(ModalContext);
   const notify = () => toast.success('THANK YOU FOR YOUR ORDER', { autoClose: 3000 });
 
   const {
@@ -51,7 +51,7 @@ export default function Checkout() {
 
   const onSubmit = (data) => {
     notify()
-    ModalToggle()
+    openModal()
     setIsConfirmationOpen(true)
   };
 

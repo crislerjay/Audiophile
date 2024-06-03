@@ -14,6 +14,10 @@ const ModalProvider = ({ children }) => {
     setIsModalOpen(false)
   }
 
+  const openModal = () => {
+    setIsModalOpen(true)
+  }
+
   useEffect(() => {
     if (isModalOpen) {
       document.body.classList.add('modal-open');
@@ -23,7 +27,7 @@ const ModalProvider = ({ children }) => {
   }, [isModalOpen]);
 
   return (
-    <ModalContext.Provider value={{ isModalOpen, ModalToggle, closeModal, isConfirmationOpen, setIsConfirmationOpen }}>
+    <ModalContext.Provider value={{ isModalOpen, openModal, ModalToggle, closeModal, isConfirmationOpen, setIsConfirmationOpen }}>
       { children }
     </ModalContext.Provider>
   )

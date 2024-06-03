@@ -539,7 +539,7 @@ Hero starts
 ========================================================================== */
 .hero {
   background: url('./assets/images/home/mobile/image-hero.jpg') no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 
