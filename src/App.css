@@ -539,7 +539,7 @@ Hero starts
 ========================================================================== */
 .hero {
   background: url('./assets/images/home/mobile/image-hero.jpg') no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
 }
 
@@ -1368,6 +1368,7 @@ confirmation starts
 .confirmation-modal {
   display: none;
   top: 0;
+  z-index: 9;
 }
 
 .confirmation-modal.active {
