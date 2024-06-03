@@ -399,17 +399,17 @@
         "first": {
           "mobile": "./assets/images/product-zx7-speaker/mobile/image-gallery-1.jpg",
           "tablet": "./assets/images/product-zx7-speaker/tablet/image-gallery-1.jpg",
-          "desktop": "./assets/images/product-zx7-speaker/desktop/image-gallery-1.jpg"
+          "desktop": "/images/product-zx7-speaker/desktop/image-gallery-1.jpg"
         },
         "second": {
           "mobile": "./assets/images/product-zx7-speaker/mobile/image-gallery-2.jpg",
           "tablet": "./assets/images/product-zx7-speaker/tablet/image-gallery-2.jpg",
-          "desktop": "./assets/images/product-zx7-speaker/desktop/image-gallery-2.jpg"
+          "desktop": "/assets/images/product-zx7-speaker/desktop/image-gallery-2.jpg"
         },
         "third": {
           "mobile": "./assets/images/product-zx7-speaker/mobile/image-gallery-3.jpg",
           "tablet": "./assets/images/product-zx7-speaker/tablet/image-gallery-3.jpg",
-          "desktop": "./assets/images/product-zx7-speaker/desktop/image-gallery-3.jpg"
+          "desktop": "/Audiophile/assets/images/product-zx7-speaker/desktop/image-gallery-3.jpg"
         }
       },
       "others": [
