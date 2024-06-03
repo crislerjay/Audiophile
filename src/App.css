@@ -941,7 +941,8 @@ related-products ends
 /* ==========================================================================
 Modal starts
 ========================================================================== */
-.modal-overlay {
+.modal-overlay,
+.confirmation-modal {
   position: fixed;
   top: 90px;
   left: 0;

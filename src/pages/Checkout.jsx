@@ -50,7 +50,6 @@ export default function Checkout() {
   });
 
   const onSubmit = (data) => {
-    ModalToggle()
     notify()
     setIsConfirmationOpen(true)
   };
