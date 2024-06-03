@@ -5,7 +5,7 @@ import { useContext, useState } from 'react';
 import useCartStore from '../store/cartStore';
 import { useNavigate } from 'react-router-dom';
 import { computeTotal } from '../utils/cartUtils'
-import codIcon from '/Audiophile/images/checkout/icon-cash-on-delivery.svg'
+import codIcon from '../assets/images/checkout/icon-cash-on-delivery.svg'
 import { ModalContext } from '../context/ModalContext'
 import Modal from '../components/Modal';
 import { toast } from 'react-toastify';

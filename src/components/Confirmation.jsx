@@ -1,6 +1,6 @@
 import useCartStore from '../store/cartStore';
 import { computeTotal } from '../utils/cartUtils'
-import checkIcon from '/Audiophile/images/checkout/icon-order-confirmation.svg'
+import checkIcon from '../assets/images/checkout/icon-order-confirmation.svg'
 import { useContext } from 'react';
 import { ModalContext } from '../context/ModalContext'
 import {useNavigate} from 'react-router-dom';
@@ -15,7 +15,7 @@ export default function Confirmation() {
   const handleSubmit = () => {
     closeModal()
     clearCart()
-    navigate('/')
+    navigate('/Audiophile/')
   }
 
   return (
