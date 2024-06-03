@@ -7,9 +7,9 @@ import { useNavigate } from 'react-router-dom';
 import { computeTotal } from '../utils/cartUtils'
 import codIcon from '../assets/images/checkout/icon-cash-on-delivery.svg'
 import { ModalContext } from '../context/ModalContext'
-import Modal from '../components/Modal';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Confirmation from '../components/Confirmation';
 
 const schema = yup.object().shape({
   name: yup.string().required('Name is required'),
@@ -19,7 +19,6 @@ const schema = yup.object().shape({
   zipcode: yup.number().positive('Zipcode must be a positive number').integer('Zipcode must be an integer').required('Zipcode number is required'),
   city: yup.string().required('City is required'),
   country: yup.string().required('Country is required'),
-
   paymentMethod: yup.string().required('Please select an option'),
   // Additional fields for option1
   eMoneyNumber: yup.string().when('paymentMethod', {
@@ -36,7 +35,7 @@ export default function Checkout() {
   const navigate = useNavigate();
   const cart = useCartStore((state) => state.cart);
   const { total, vat, shipping, overallTotal } = computeTotal(cart);
-  const { isModalOpen, ModalToggle } = useContext(ModalContext);
+  const { isConfirmationOpen, setIsConfirmationOpen } = useContext(ModalContext);
   const notify = () => toast.success('THANK YOU FOR YOUR ORDER', { autoClose: 3000 });
 
   const {
@@ -53,6 +52,7 @@ export default function Checkout() {
   const onSubmit = (data) => {
     ModalToggle()
     notify()
+    setIsConfirmationOpen(true)
   };
 
   const [selectedMethod, setSelectedMethod] = useState('cod'); 
@@ -235,7 +235,7 @@ export default function Checkout() {
         </form>
       </div>
     </div>
-    {isModalOpen ? <Modal open={'openConfirmation'} /> : null}
+    {isConfirmationOpen ? <Confirmation /> : null}
     </>
   )
 }

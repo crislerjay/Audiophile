@@ -9,11 +9,11 @@ export default function Confirmation() {
   const cart = useCartStore((state) => state.cart);
   const clearCart = useCartStore((state) => state.clearCart);
   const {overallTotal } = computeTotal(cart);
-  const { closeModal } = useContext(ModalContext);
+  const { setIsConfirmationOpen } = useContext(ModalContext);
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    closeModal()
+    setIsConfirmationOpen(false)
     clearCart()
     navigate('/Audiophile/')
   }

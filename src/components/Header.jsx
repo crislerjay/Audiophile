@@ -39,7 +39,7 @@ export default function Header() {
         </div>
       </div>
       {isNavOpen ?  <div className="menu-wrap"><CategoryList /></div>: null}
-      {isModalOpen ? <Modal open={'openCart'}/> : null}
+      {isModalOpen ? <Modal /> : null}
     </>
   )
 }

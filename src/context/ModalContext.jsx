@@ -4,6 +4,7 @@ const ModalContext = createContext();
 
 const ModalProvider = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isConfirmationOpen, setIsConfirmationOpen] = useState(false);
 
   const ModalToggle = () => {
     setIsModalOpen(!isModalOpen)
@@ -22,7 +23,7 @@ const ModalProvider = ({ children }) => {
   }, [isModalOpen]);
 
   return (
-    <ModalContext.Provider value={{ isModalOpen, ModalToggle, closeModal }}>
+    <ModalContext.Provider value={{ isModalOpen, ModalToggle, closeModal, isConfirmationOpen, setIsConfirmationOpen }}>
       { children }
     </ModalContext.Provider>
   )

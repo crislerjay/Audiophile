@@ -1,12 +1,11 @@
 import Cart from "./Cart";
-import Confirmation from "./Confirmation";
 
-export default function Modal({open}) {
+export default function Modal() {
+  console.log(open);
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        {open === 'openCart' ? <Cart /> : null}
-        {open === 'openConfirmation' ? <Confirmation /> : null}
+        <Cart />
       </div>
     </div>
   )
