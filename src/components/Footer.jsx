@@ -10,10 +10,10 @@ export default function Footer() {
       <div className="footer-content">
         <p className="logo"><img src={logo} alt="audiophile logo" /></p>
         <ul className="nav-links">
-          <li><Link to="/">HOME</Link></li>
-          <li><Link to="/category/headphones">HEADPHONES</Link></li>
-          <li><Link to="/category/speakers">SPEAKERS</Link></li>
-          <li><Link to="/category/earphones">EARPHONES</Link></li>
+          <li><Link to="/Audiophile/">HOME</Link></li>
+          <li><Link to="/Audiophile/category/headphones">HEADPHONES</Link></li>
+          <li><Link to="/Audiophile/category/speakers">SPEAKERS</Link></li>
+          <li><Link to="/Audiophile/category/earphones">EARPHONES</Link></li>
         </ul>
         <p className="about text-gray text-02">Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
         <p className="text-gray text-02 copyright">Copyright 2024. All Rights Reserved</p>

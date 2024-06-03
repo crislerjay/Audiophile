@@ -29,10 +29,10 @@ export default function Header() {
           <div className="logo"><Link to="/" onClick={() => { closeModal(); closeNav() }}><img src={logo} alt="audiophile logo" /></Link></div>
           <div className='pc-only'>
             <ul className="nav-links">
-              <li><Link className={activeLink === 'home' ? 'active' : ''} onClick={() => handleClick('home')} to="/">HOME</Link></li>
-              <li><Link className={activeLink === 'headphones' ? 'active' : ''} onClick={() => handleClick('headphones')} to="/category/headphones">HEADPHONES</Link></li>
-              <li><Link className={activeLink === 'speakers' ? 'active' : ''} onClick={() => handleClick('speakers')} to="/category/speakers">SPEAKERS</Link></li>
-              <li><Link className={activeLink === 'earphones' ? 'active' : ''} onClick={() => handleClick('earphones')} to="/category/earphones">EARPHONES</Link></li>
+              <li><Link className={activeLink === 'home' ? 'active' : ''} onClick={() => handleClick('home')} to="/Audiophile/">HOME</Link></li>
+              <li><Link className={activeLink === 'headphones' ? 'active' : ''} onClick={() => handleClick('headphones')} to="/Audiophile/category/headphones">HEADPHONES</Link></li>
+              <li><Link className={activeLink === 'speakers' ? 'active' : ''} onClick={() => handleClick('speakers')} to="/Audiophile/category/speakers">SPEAKERS</Link></li>
+              <li><Link className={activeLink === 'earphones' ? 'active' : ''} onClick={() => handleClick('earphones')} to="/Audiophile/category/earphones">EARPHONES</Link></li>
             </ul>
           </div>
           <div className="cart-btn" onClick={() => {ModalToggle(); closeNav()}}>{cart.length ? <span className='cart-count'>{cart.length}</span> : ''}<img src={cartIcon} alt="cart icon" /></div>

@@ -11,7 +11,7 @@ export default function Home() {
           <p className="text-01">NEW PRODUCT</p>
           <h1 className="title-01">XX99 MARK II<br /> HEADPHONES</h1>
           <p className="text-02 text-gray">Experience natural, lifelike audio and exceptional <br className='hide-on-mobile'/>build quality made for the passionate music <br className='pc-only'/>enthusiast.</p>
-          <p><Link to='/product/xx99-mark-one-headphones' className="btn btn-orange">SEE PRODUCT</Link></p>
+          <p><Link to='/Audiophile/product/xx99-mark-one-headphones' className="btn btn-orange">SEE PRODUCT</Link></p>
         </div>
       </div>
       <div className="wrap">

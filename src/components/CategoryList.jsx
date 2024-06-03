@@ -14,21 +14,21 @@ export default function CategoryList() {
         <p className="category-img"><img src={headphones} alt="headphone" /></p>
         <div className="category-content">
           <p className="category-title">HEADPHONES</p>
-          <p><Link onClick={closeNav} to="/category/headphones" className='btn-02'>SHOP</Link></p> 
+          <p><Link onClick={closeNav} to="/Audiophile/category/headphones" className='btn-02'>SHOP</Link></p> 
         </div>
       </div>
       <div className="category-item">
         <p className="category-img"><img src={speakers} alt="speaker" /></p>
         <div className="category-content">
           <p className="category-title">SPEAKERS</p>
-          <p><Link onClick={closeNav} to="/category/speakers" className='btn-02'>SHOP</Link></p>
+          <p><Link onClick={closeNav} to="/Audiophile/category/speakers" className='btn-02'>SHOP</Link></p>
         </div>
       </div>
       <div className="category-item">
         <p className="category-img"><img src={earphones} alt="earphone" /></p>
         <div className="category-content">
           <p className="category-title">EARPHONES</p>
-          <p><Link onClick={closeNav} to="/category/earphones" className='btn-02'>SHOP</Link></p> 
+          <p><Link onClick={closeNav} to="/Audiophile/category/earphones" className='btn-02'>SHOP</Link></p> 
         </div>
       </div>
     </div>

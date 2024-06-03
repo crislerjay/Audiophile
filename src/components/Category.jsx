@@ -16,7 +16,7 @@ export default function Category({product}) {
             {prod.new ? <p className='text-01 text-orange'>NEW PRODUCT</p> : ''}
             <h2 className="title-02">{prod.name}</h2>
             <p className="text-02 text-dark-gray">{prod.description}</p>
-            <p><Link className='btn btn-orange mb3' to={`/product/${prod.slug}`}>SEE PRODUCT</Link></p>
+            <p><Link className='btn btn-orange mb3' to={`/Audiophile/product/${prod.slug}`}>SEE PRODUCT</Link></p>
           </div>
         </div>
       ))}

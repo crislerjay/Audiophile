@@ -14,7 +14,7 @@ export default function RelatedProducts({others}) {
                 src={product.image.mobile} />
             </picture>
             <h3 className="title-03">{product.name}</h3>
-            <p><Link className='btn btn-orange' to={`/product/${product.slug}`}>SEE PRODUCT</Link></p>
+            <p><Link className='btn btn-orange' to={`/Audiophile/product/${product.slug}`}>SEE PRODUCT</Link></p>
           </div>
         ))}
       </div>
